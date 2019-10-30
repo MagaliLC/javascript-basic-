@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio JavaSCript 1</title>
+</head>
+
+<body>
+    <script>
+        //Ejercicio 1
+        console.log("Hola mundo");
+
+        //Ejercicio 2
+        alert("Hola, me llamo Magalí");
+
+        //Ejercicio 3
+        let name = "Magalí";
+        let surname = "Lescano";
+        console.log(name + " " + surname);
+
+
+        //Ejercicio 4
+        let number1 = 10;
+        let number2 = 5;
+        let sum = number1 + number2;
+        console.log("La suma de entre " + number1 + " y " + number2 + " es " + sum);
+
+        //Ejercicio 5
+        let examRecord = 6;
+        if (examRecord < 5) {
+            alert("Has suspendido con un " + examRecord);
+        } else {
+            alert("¡Felicidades! Has aprobado con un " + examRecord);
+        }
+
+        //Ejercicio 6
+        let sentence = "Tinc un cotxe de color blau";
+        let newSentence = sentence.replace(/blau/g, "verd");
+        console.log(newSentence);
+        newSentence = sentence.replace(/o/g, "u");
+        console.log(newSentence);
+
+        //Ejercicio 7
+        let furniture = ["taula", "cadira", "ordinador", "libreta"];
+
+        for (let i = 0; i < furniture.length; i++) {
+            console.log("El objeto " + furniture[i] + " está en la posición " + i + ".");
+        }
+
+        //Ejercicio 8
+        function calculator(operation, number1, number2) {
+            switch (operation) {
+                case "sum":
+                    return number1 + number2;
+                    break;
+            }
+            switch (operation) {
+                case 'substract':
+                    return number1 - number2;
+                    break;
+            }
+            switch (operation) {
+                case 'divide':
+                    return number1 / number2;
+                    break;
+            }
+            switch (operation) {
+                case 'multiply':
+                    return number1 * number2;
+                    break;
+            }
+
+        }
+        var result = calculator("substract", 40, 20);
+        console.log(result);
+    </script>
+
+</body>
+
+</html>
